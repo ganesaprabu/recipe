@@ -3,3 +3,5 @@ git add -A
 git commit -m 'Added my project'
 git remote add origin https://github.com/ganesaprabu/recipe.git
 git push -u -f origin master
+
+https://scotch.io/tutorials/how-to-push-an-existing-project-to-github
