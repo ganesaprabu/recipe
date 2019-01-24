@@ -2,6 +2,15 @@
   <div class="col-md-10">
     <app-shopping-edit></app-shopping-edit>
   </div>
-  <hr>
-  The list
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-md-10">
+
+    <a href="#" class="list-group-item" style="" *ngFor="let ingredient of ingredients">
+      {{ingredient.name}} ({{ingredient.amount}})
+    </a>
+
+  </div>
 </div>
