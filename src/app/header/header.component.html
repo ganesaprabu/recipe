@@ -3,19 +3,19 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Recipe</a>
     </div>
-  
+
 
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Recipe <span class="sr-only">(current)</span></a></li>
-      <li><a href="#">Shopping List</a></li>
+      <li class="active"><a href="#" (click)="menuClick('recipe')">Recipe <span class="sr-only">(current)</span></a></li>
+      <li><a href="#" (click)="menuClick('shopping')">Shopping List</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" role="button">Dropdown
+        <a href="#" class="dropdown-toggle" role="button">Manage
           <span class="caret"></span></a>
-        <ul class="dropdown-menu"> 
+        <ul class="dropdown-menu">
           <li><a href="#">Fetch data</a></li>
           <li><a href="#">Save data</a></li>
         </ul>

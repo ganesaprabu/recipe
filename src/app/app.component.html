@@ -1,10 +1,10 @@
-<app-header></app-header>
+<app-header (menuTrigger)="menuToDisplay($event)"></app-header>
 
 <div class="container">
   <div class="row">
       <div class="col-md-12">
-        <app-recipes></app-recipes>
-        <app-shopping-list></app-shopping-list>
+        <app-recipes *ngIf="menu === 'recipe'"></app-recipes>
+        <app-shopping-list *ngIf="menu === 'shopping'"></app-shopping-list>
       </div>
   </div>
 </div>

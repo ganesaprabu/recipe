@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe';
+  menu: string = 'recipe';
+
+  menuToDisplay(menuData: {menu: string}) {
+    this.menu = menuData.menu;
+  }
 }
