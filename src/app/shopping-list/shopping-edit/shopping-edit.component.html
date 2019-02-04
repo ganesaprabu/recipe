@@ -2,13 +2,13 @@
   <div class="col-xs-12">
       <div class="row">
         <div class="col-sm-5 form-group">
-          <label for="Name">Name</label>
+          <label for="Name" appTextHighlight>Name</label>
           <input type="text" id="name" class="form-control" #inputName>
         </div>
       </div>
       <div class="row">
           <div class="col-sm-2  form-group">
-              <label for="Amount">Amount</label>
+              <label for="Amount" appTextHighlight>Amount</label>
               <input type="number" id="amount" class="form-control" #inputAmount>
           </div>
       </div>
@@ -19,5 +19,11 @@
           <button type="button" class="btn btn-primary">Clear</button>
         </div>
       </div>
+      <br>
+      <p appRendererHighlight>This is highlighting via <b><u>appRendererHighlight</u></b></p>
+
+      <br>
+      <p appEventlistenerHighlightDirective>This is highlighting via <b><u>appEventlistenerHighlightDirective</u></b>. It will highlight <b><u>on mouse over</u></b></p>
+
   </div>
 </div>

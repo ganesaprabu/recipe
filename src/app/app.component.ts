@@ -12,4 +12,5 @@ export class AppComponent {
   menuToDisplay(menuData: {menu: string}) {
     this.menu = menuData.menu;
   }
+
 }
