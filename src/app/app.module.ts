@@ -15,6 +15,9 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { BasicHighlightDirective } from './directive/basicHighlight.directive';
 import { RendererHighlightDirective } from './directive/renderer-highlight.directive';
 import { EventlistenerHighlightDirective } from './directive/eventlistener-highlight.directive';
+import { HostBindingHighlightDirective } from './directive/hostBinding-highlight.directive';
+import { AdvancedDirective } from './directive/advanced.directive';
+import { StructuralDirective } from './directive/structural.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { EventlistenerHighlightDirective } from './directive/eventlistener-highl
     RecipeItemComponent,
     BasicHighlightDirective,
     RendererHighlightDirective,
-    EventlistenerHighlightDirective
+    EventlistenerHighlightDirective,
+    HostBindingHighlightDirective,
+    AdvancedDirective,
+    StructuralDirective
   ],
   imports: [
     BrowserModule,

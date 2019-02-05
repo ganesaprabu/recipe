@@ -3,13 +3,19 @@
       <div class="row">
         <div class="col-sm-5 form-group">
           <label for="Name" appTextHighlight>Name</label>
-          <input type="text" id="name" class="form-control" #inputName>
+          <input type="text" id="name" class="form-control" #inputName appHostBindingHighlightDirective>
         </div>
       </div>
       <div class="row">
-          <div class="col-sm-2  form-group">
+          <div class="col-sm-5  form-group">
               <label for="Amount" appTextHighlight>Amount</label>
               <input type="number" id="amount" class="form-control" #inputAmount>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-5  form-group">
+              <label for="desc" appAdvancedDirective="red" [defaultColor]="'blue'">Description</label>
+              <input type="text" id="desc" class="form-control" #inputAmount>
           </div>
       </div>
       <div class="row">
@@ -24,6 +30,14 @@
 
       <br>
       <p appEventlistenerHighlightDirective>This is highlighting via <b><u>appEventlistenerHighlightDirective</u></b>. It will highlight <b><u>on mouse over</u></b></p>
+
+      <div *appUnless="flag">
+        This will render when the condition is FALSE. Flag value now is 'FALSE'
+      </div>
+
+      <div *appUnless="!flag">
+        This will render when the condition is TRUE. Flag value now is 'TRUE'
+      </div>
 
   </div>
 </div>
