@@ -3,7 +3,7 @@ import { Directive, OnInit, Input, TemplateRef, ViewContainerRef } from '@angula
 @Directive({
   selector: '[appUnless]'
 })
-export class StructuralDirective implements OnInit{
+export class StructuralDirective implements OnInit {
 
   @Input('appUnless')
   set unless(condition: boolean) {
