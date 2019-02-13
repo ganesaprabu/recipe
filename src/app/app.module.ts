@@ -19,6 +19,8 @@ import { HostBindingHighlightDirective } from './directive/hostBinding-highlight
 import { AdvancedDirective } from './directive/advanced.directive';
 import { StructuralDirective } from './directive/structural.directive';
 
+import { DropDownBindDirective } from './shared/directive/dropdown.bind.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,9 @@ import { StructuralDirective } from './directive/structural.directive';
     EventlistenerHighlightDirective,
     HostBindingHighlightDirective,
     AdvancedDirective,
-    StructuralDirective
+    StructuralDirective,
+
+    DropDownBindDirective
   ],
   imports: [
     BrowserModule,
