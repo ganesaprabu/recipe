@@ -23,6 +23,8 @@ import { StructuralDirective } from './test_directive/structural.directive';
 import { DropDownDirective } from './shared/directive/dropdown.directive';
 
 import { DropDownBindDirective } from './shared/directive/dropdown.bind.directive';
+import { ShoppingService } from './shopping-list/shopping.service';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,7 @@ import { DropDownBindDirective } from './shared/directive/dropdown.bind.directiv
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ShoppingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

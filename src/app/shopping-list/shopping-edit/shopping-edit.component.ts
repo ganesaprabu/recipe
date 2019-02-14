@@ -29,6 +29,6 @@ export class ShoppingEditComponent implements OnInit {
       desc: this.desc.nativeElement.value
     };
 
-    this.shoppingService.addIngredients(this.ingredient);
+    this.shoppingService.addIngredient(this.ingredient);
   }
 }
