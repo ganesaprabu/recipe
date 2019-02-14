@@ -22,6 +22,8 @@ import { StructuralDirective } from './test_directive/structural.directive';
 // Custom Directive (Created for this project)
 import { DropDownDirective } from './shared/directive/dropdown.directive';
 
+import { DropDownBindDirective } from './shared/directive/dropdown.bind.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +41,7 @@ import { DropDownDirective } from './shared/directive/dropdown.directive';
     AdvancedDirective,
     StructuralDirective,
 
+    DropDownBindDirective,
     DropDownDirective
   ],
   imports: [
