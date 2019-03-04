@@ -24,6 +24,9 @@ import { DropDownDirective } from './shared/directive/dropdown.directive';
 
 import { DropDownBindDirective } from './shared/directive/dropdown.bind.directive';
 import { ShoppingService } from './shopping-list/shopping.service';
+import { RoutingModule } from './app.routing.module';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 
 @NgModule({
@@ -44,11 +47,14 @@ import { ShoppingService } from './shopping-list/shopping.service';
     StructuralDirective,
 
     DropDownBindDirective,
-    DropDownDirective
+    DropDownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RoutingModule
   ],
   providers: [ShoppingService],
   bootstrap: [AppComponent]

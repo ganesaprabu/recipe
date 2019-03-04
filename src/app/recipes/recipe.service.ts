@@ -1,7 +1,8 @@
 import { Recipe } from './Recipe.model';
-import { EventEmitter } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Ingredient } from '../shared/Ingredient.model';
 
+@Injectable({providedIn: 'root'})
 export class RecipeService {
     private recipes: Recipe[] = [];
     selectedRecipe = new EventEmitter<Recipe>();
@@ -16,11 +17,21 @@ export class RecipeService {
            new Recipe(
              'Chevrolet',
              'Chevrolet car',
-             'https://cdn.pixabay.com/photo/2018/08/28/17/35/chevrolet-3638043_960_720.jpg',
+             'https://cdn.pixabay.com/photo/2018/12/06/12/50/corvette-3859797_960_720.jpg',
              [new Ingredient('Engine', 1, 'This is Engine'), new Ingredient('Door', 4, 'This is Door')]));
     }
 
     getRecipes() {
         return this.recipes.slice();
+    }
+
+    getRecipe(recipeName: string): Recipe {
+      let recip;
+      this.recipes.forEach( (recipe: Recipe) => {
+        if (recipe.name === recipeName) {
+          recip = recipe;
+        }
+      });
+      return recip;
     }
 }
