@@ -12,13 +12,13 @@ export class RecipeService {
              'Ford',
              'Ford Automotive',
              'https://cdn.pixabay.com/photo/2014/03/19/14/50/ford-290615_960_720.jpg',
-             [new Ingredient('Gear', 1, 'This is Gear'), new Ingredient('Tyre', 4, 'This is Tyre')]));
+             [new Ingredient('Gear', 1), new Ingredient('Tyre', 4)]));
        this.recipes.push(
            new Recipe(
              'Chevrolet',
              'Chevrolet car',
-             'https://cdn.pixabay.com/photo/2018/12/06/12/50/corvette-3859797_960_720.jpg',
-             [new Ingredient('Engine', 1, 'This is Engine'), new Ingredient('Door', 4, 'This is Door')]));
+             'https://cdn.pixabay.com/photo/2018/03/23/09/15/chevrolet-3253172_960_720.png',
+             [new Ingredient('Engine', 1), new Ingredient('Door', 4)]));
     }
 
     getRecipes() {
